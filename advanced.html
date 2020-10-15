@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Google Advanced Search</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap-4.5.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styless/styless.css">
+</head>
+<body>
+    <nav>
+    <!--
+        <ul class="nav justify-content-start">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Google</a>
+            </li>
+        </ul>
+    -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" id="nav_image">
+                    <img src="https://iconape.com/wp-content/files/ee/64781/svg/google-2015.svg"
+                    alt="google"  width="90">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Google Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="image.html">Image</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <span class="text-left">Advanced Search</span>
+    </div>
+    <div class="container-fluid">
+        <span class="text">Find Pages with...</span>
+    </div>
+
+    <form action="https://google.com/search">
+        <!-- all these words -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="" class="col-form-label">all these words:</label>
+
+            </div>
+            
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="as_q">
+            </div> 
+        </div>
+        <!-- this exact word -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="" class="col-form-label">this exact word or phrase:</label>
+            </div>
+        
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="as_epq">
+            </div>
+        </div>
+        <!-- any of these -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="" class="col-form-label">any of these words:</label>
+            </div>
+        
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="as_oq">
+            </div>
+        </div>
+        <!-- none of these words -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="" class="col-form-label">none of these words:</label>
+            </div>
+        
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="as_eq">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <input type="submit" class="btn btn-primary" value="advanced search">
+            </div>
+            
+        </div>
+        
+    </form>
+    
+</body>
+</html>
+
+
+
